@@ -65,18 +65,15 @@ td {
 }
 .btn1{
     width: 50px;
-
 }
-#chooseOption{
-    
+#totalPayment{
+    font-size: 20px;
 }
-#mainCon {}
-
 .cRights {
     direction: ltr;
     text-align: center;
     font-size: 14px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 @media (max-width: 800px) {

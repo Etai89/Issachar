@@ -28,11 +28,11 @@ $(document).ready(()=>{
         const thirdPayment = totalA*30/100
         const lastPayment = totalA*10/100
         if ($('#optionAselect').is(':checked')){       
-            $('#totalPayment').text(totalA.toLocaleString())
-            $('#firstPayment').text(firstPayment.toLocaleString())
-            $('#secondPayment').text(secondPayment.toLocaleString())
-            $('#thirdPayment').text(thirdPayment.toLocaleString())
-            $('#lastPayment').text(lastPayment.toLocaleString())
+            $('#totalPayment').text("₪" + totalA.toLocaleString())
+            $('#firstPayment').text("₪" + firstPayment.toLocaleString())
+            $('#secondPayment').text("₪" + secondPayment.toLocaleString())
+            $('#thirdPayment').text("₪" + thirdPayment.toLocaleString())
+            $('#lastPayment').text("₪" + lastPayment.toLocaleString())
         }
     })
     $('#optionBselect').change(()=>{
@@ -42,11 +42,11 @@ $(document).ready(()=>{
         const thirdPayment = totalB*30/100
         const lastPayment = totalB*10/100
         if($('#optionBselect').is(':checked')){
-            $('#totalPayment').text(totalB.toLocaleString())
-            $('#firstPayment').text(firstPayment.toLocaleString())
-            $('#secondPayment').text(secondPayment.toLocaleString())
-            $('#thirdPayment').text(thirdPayment.toLocaleString())
-            $('#lastPayment').text(lastPayment.toLocaleString())
+            $('#totalPayment').text("₪" + totalB.toLocaleString())
+            $('#firstPayment').text("₪" + firstPayment.toLocaleString())
+            $('#secondPayment').text("₪" + secondPayment.toLocaleString())
+            $('#thirdPayment').text("₪" + thirdPayment.toLocaleString())
+            $('#lastPayment').text("₪" + lastPayment.toLocaleString())
         }
     })
 
