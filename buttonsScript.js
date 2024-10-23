@@ -34,4 +34,30 @@ $(document).ready(() => {
     whatsapp.on('click', () => {
         whatsAppMe()
     })
+
+    $('#print').click(() => {
+        if ($('#optionAselect').is(':checked')) {
+            $('#optionAdiv').toggle();
+            if ($('#optionBdiv').is(':visible')) {
+                $('#optionBdiv').toggle();
+            }
+        }
+        if ($('#optionBselect').is(':checked')) {
+            $('#optionBdiv').toggle();
+            if ($('#optionAdiv').is(':visible')) {
+                $('#optionAdiv').toggle();
+            }
+        }
+        // Corrected condition to check if neither option is selected
+        if (!$('#optionAselect').is(':checked') && !$('#optionBselect').is(':checked')) {
+            alert('אנא בחר אחת מהאפשרויות על מנת להדפיס את ההצעה!');
+            return;
+        }
+        $('#print').hide()
+        $('#buttons').hide();
+        print();
+        $('#buttons').toggle();
+        $('#print').show()
+    });
+    
 })

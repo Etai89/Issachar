@@ -66,6 +66,10 @@ td {
 .btn1{
     width: 50px;
 }
+#print{
+    border-radius: 10px;
+    background-color: rgb(248, 230, 230);
+}
 #totalPayment{
     font-size: 20px;
 }
@@ -78,11 +82,12 @@ td {
 
 @media (max-width: 800px) {
     #logo {
+        display: flex;
+        justify-content: center;
         width: 500px;
         height: 250px;
         /* position: absolute; */
         margin-right: 20px;
-
     }
 
     .logo {

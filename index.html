@@ -9,6 +9,8 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -35,9 +37,9 @@
                 <img class="logo" src="LOGO-01.jpg" alt="Etai Hatuel Logo">
             </div>
             <div id="title" class="col-md-10 col-12 col-sm-12 titleRow">
-                <h1 class="title">הצעת מחיר</h1>
-                <h3 class="title"><span class="client"></span></h3>
-                <h4 class="subTitle title">יהודה קרני 7 (רמות) ירושלים</span></h4>
+                <h3 class="title">הצעת מחיר</h3>
+                <p class="subTitle"><strong><span class="client"></span> - יהודה קרני 7 (רמות) ירושלים</strong></p>
+
             </div>
         </div>
     </div>
@@ -221,7 +223,6 @@
                     <li>חומרים לבנים יספוקו ע"י <span class="client"></span>.</li>
                     <li>חומרים שחורים יסופקו ע"י <span class="contractor"></span>.</li>
                     <li>משך העבודה בין - 21 ל - 26 ימי עסקים עם אפשרות לחריגה מכל סיבה שהיא.</li>
-                    <li></li>
                 </ol></p>
 
                 <h3>תשלומים</h3>
@@ -238,6 +239,7 @@
                 <hr>
                 <p><strong>מחיר העבודה הכללי: <span id="totalPayment"></span></strong>
                 </p>
+                <button id="print">הורד PDF</button>
                 <hr>
                 <div id="buttons" class="container text-center mt-4 col-sm-12 col-md-12">
 
@@ -246,6 +248,7 @@
                     <a href="mailto:senioretai@gmail.com">
                         <img class="btn1" id="gmail" src="gmail.png" alt="Send Email" />
                     </a>
+                    
 
                 </div>
                 <p class="cRights">© 2024 Etai Hatuel. All rights reserved.</p>
