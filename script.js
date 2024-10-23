@@ -1,13 +1,26 @@
-// Function to trigger a phone call
-function callMe() {
-    // Replace with your phone number
-    window.location.href = "tel:+972549832002";
+$(document).ready(()=>{
+const client = "יששכר ברזילי"
+$('.client').text(client)
+
+const contractor = "איתי חתואל"
+$('.contractor').text(contractor)
+
+
+
+const square = (x, y) => {
+    return x * y
 }
 
-// Function to open WhatsApp chat
-function whatsAppMe() {
-    // Replace with your phone number in the WhatsApp link
-    const phoneNumber = "972549832002"; 
-    const message = encodeURIComponent("היי איתי, אהבתי את הצעת המחיר שלך, אפשר לדבר?");
-    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+console.log(square(2, 4))
+
+const runningMeter = (length_A, length_B, width_A, width_B, height) => {
+    const length = length_A + length_B
+    const width = width_A + width_B
+    return (length + width) * height
 }
+
+const result = Math.round(runningMeter(220, 240, 360, 380, 260))
+console.log(result)
+
+
+})

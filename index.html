@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,26 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="options.js"></script>
+    <script src="script.js"></script>
+    <script src="buttonsScript.js"></script>
+
 </head>
+
 <body>
     <div id="mainCon" class="container">
         <div class="row main d-flex">
@@ -17,8 +35,8 @@
                 <img class="logo" src="LOGO-01.jpg" alt="Etai Hatuel Logo">
             </div>
             <div id="title" class="col-md-10 col-12 titleRow">
-                <h1 class="title">יששכר - הצעת מחיר</h1>
-                <h4 class="subTitle">יהודה קרני 7 (רמות) ירושלים - יששכר ברזילי</h4>
+                <h1 class="title"><span class="client"></span> - הצעת מחיר</h1>
+                <h4 class="subTitle">יהודה קרני 7 (רמות) ירושלים - <span class="client"></span></h4>
             </div>
         </div>
     </div>
@@ -27,92 +45,211 @@
             <div class="col-md-12 col-12  ">
                 <hr>
                 <h3>פירוט העבודה</h3>
-                
-                <p>
-                    <ul><strong>סלון:</strong>
-                        <li>ביטול תשתיות רמקולים.</li>
-                        <li>החלפת גופי תאורה סטנדרטיים (פנדנטים).</li>
-                        <li>הדבקת 2 פאנלים.</li>
-                        <li>טיפול בעובש בעזרת חומר דוחה פטריות קיר.</li>
-                        <li>תיקון תריס- במידה ויידרש תיקון או החלפה נדון על כך במקום.</li>
-                        <li>פירוק וילונות ומדפים.</li>
-                    </ul>
-                    <ul><strong>מטבח:</strong>
-                        <li>החלפת גופי תאורה מתחת לארון מטבח העליון.</li>
-                        <li>הדבקת חיווט גופי תאורה בארון מטבח העליון.</li>
-                        <li>איטום חיבור בין השיש לקרמיקה.</li>
-                        <li>איטום כיור מטבח בחיבורים.</li>
-                    </ul>
-                    <ul><strong>מסדרון:</strong>
-                        <li>הדבקת 2 פאנלים</li>
-                    </ul>
-                    <ul><strong>חדר רחצה אורחים:</strong>
-                        <li>קיבוע אסלה.</li>
-                        <li>החלפת סיפון שרשורי בכיור של הארון.</li>
-                        <li>תיקון תקרת גבס.</li>
-                        <li>איטום חיבור בין רצפה לשיש מקלחון.</li>
 
+                <p>
+
+                <ul><strong>חדר רחצה (יחידת הורים):</strong>
+                    <li>פירוק: אסלה, מקלחון, כיור, אריחים בקירות, קרמיקה ברצפה.</li>
+                    <li>שבירת חלק מהקיר במקלחון.</li>
+                    <li>התקנת ניאגרה סמויה + אסלה תלויה.</li>
+                    <li>ריצוף רצפה בקרמיקה.</li>
+                    <li>הדבקת אריחים בקירות עד גובה תקרה.</li>
+                    <li>מילוי רובה ברצפה ובקירות.</li>
+                    <li>תיקוני שכפטל בתקרה + צביעת תקרה.</li>
+                    <li>התקנת ארון רחצה קטן + כיור + ברז.</li>
+                    <li>התקנת מקלחון/וילון</li>
+
+                </ul>
+
+                <ul><strong>בית שימוש (אורחים):</strong>
+                    <li>התקנת אסלה תלויה.</li>
+                    <li>חציבת ריבוע עבור כיור קטן.</li>
+                    <li>השלמת אריחים בריבוע.</li>
+                    <li>מילוי רובה באריחים</li>
+                    <li>התקנת כיור קטן בריבוע.</li>
+                </ul>
+                <ul><strong>חדר רחצה (אמבטיה) - 2 אפשרויות</strong>
+                    <li id="optionA"><u>הצג אפשרות ראשונה - חדר רחצה (אמבטיה)</u></li>
+                    <li id="optionB"><u>הצג אפשרות שניה - חדר רחצה (אמבטיה)</u></li>
+                </ul>
+                <div id="optionAdiv">
+                    <ul><strong>אפשרות ראשונה:</strong>
+
+                        <li>פירוק אסלה, אמבטיה, ארון רחצה, אריחים בקירות, קרמיקה ברצפה.</li>
+                        <li>התקנת אמבטיה (עד 180 ס"מ).</li>
+                        <li>התקנת ניאגרה סמויה + אסלה תלויה.</li>
+                        <li>התקנת ארון רחצה + כיור+ ברז.</li>
+                        <li>ריצוף רצפה בקרמיקה בטיט.</li>
+                        <li>הדבקת אריחים בקירות עד גובה תקרה.</li>
+                        <li>מילוי רובה בקירות וברצפה.</li>
+                        <li>תיקוני שכפטל בתקרה + צביעת תקרה.</li>
                     </ul>
-                    <ul><strong>ממ"ד:</strong>
-                        <li>פירוק פס לד בתקרה.</li>
-                        <li>החלפת גוף תאורת תקרה.</li>
+                    <strong>חומרים לבנים חדר רחצה (אמבטיה):</strong>
+                    <table>
+                        <thead>
+                            <th class="type">סוג</th>
+                            <th class="amount">כמות</th>
+                            <th></th>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>קרמיקות רצפה</td>
+                                <td>11 מטר</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>אריחים לקירות</td>
+                                <td>35 מטר</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ארון רחצה</td>
+                                <td>160 ס"מ</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ניאגרה סמויה</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>אסלה תלויה</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>אמבטיה (עד 180 ס"מ)</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>דלתות מקלחון/וילון</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>ברז כיור</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="optionBdiv">
+                    <ul><strong>אפשרות שניה:</strong>
+
+                        <li>פירוק אסלה, אמבטיה, ארון רחצה, אריחים בקירות, קרמיקה ברצפה.</li>
+                        <li>התקנת אמבטיה (עד 180 ס"מ).</li>
+                        <li>תוספת מקלחון 80X80 או עד 90X90 במידה ויש מקום.</li>
+                        <li>סיבוב האסלה אל מול המקלחון.</li>
+                        <li>התקנת ניאגרה סמויה + אסלה תלויה.</li>
+                        <li>התקנת ארון רחצה 100 - 120 ס"מ + כיור+ ברז.</li>
+                        <li>ריצוף רצפה בקרמיקה בטיט.</li>
+                        <li>הדבקת אריחים בקירות עד גובה תקרה.</li>
+                        <li>מילוי רובה בקירות וברצפה.</li>
+                        <li>תיקוני שכפטל בתקרה + צביעת תקרה.</li>
                     </ul>
-                    <ul><strong>יחידת הורים:</strong>
-                        <li>ביטול מנורת קיר.</li>
-                        <li>תיקון גוף תאורה מרכזי/החלפה בגוף תאורה סטנדרטי.</li>
-                        <li>תיקון מנורה/ החלפה בגוף תאורה סטנדרטי בכניסה.</li>
-                    </ul>
-                    <ul><strong>חדר רחצה יחידת הורים:</strong>
-                        <li>פירוק קרמיקות בקיר הימני.</li>
-                        <li>פירוק ארון רחצה + מראה.</li>
-                        <li>במידה וצריך  אז לפרק גם את הקרמיקה שמאחורי ארון הרחצה.</li>
-                        <li>הדבקת קרמיקה בקיר הימני עד לגובה הקיים.</li>
-                        <li>התקנת ארון רחצה סטנדרטי כולל (כיור, ברז, סיפון, מראה).</li>
-                    </ul>
-                    <ul><strong>כללי:</strong>
-                        <li>תיקוני שפכטל מקומיים (חורי מסמרים, סדקים, ופינות קיר).</li>
-                        <li>צביעת קירות + תקרה בכל שטח הדירה בצבע לבן (עד לכיסוי מלא).</li>
-                        <li>פינוי פסולת.</li>
-                        <li>ניקיון בסיסי לאחר השיפוץ.</li>
-                    </ul>
+                    <strong>חומרים לבנים חדר רחצה (אמבטיה):</strong>
+                    <table>
+                        <thead>
+                            <th class="type">סוג</th>
+                            <th class="amount">כמות</th>
+                            <th></th>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>קרמיקות רצפה</td>
+                                <td>11 מטר</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>אריחים לקירות</td>
+                                <td>35 מטר</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ארון רחצה</td>
+                                <td>100 - 120 ס"מ</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>ניאגרה סמויה</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>אסלה תלויה</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>אמבטיה (עד 180 ס"מ)</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>דלתות מקלחון 80X80/90X90</td>
+                                <td>1</td>
+                            </tr>
+                            <td>מוט דוש</td>
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>ברז כיור</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div id="chooseOption">
+                    <ul><strong>בחר אפשרות:</strong></ul>
+                    <ol><input type="radio" name="options" id="optionAselect">אפשרות ראשונה</input></ol>
+                    <ol><input type="radio" name="options" id="optionBselect">אפשרות שניה</input></ol>
+                </div>
+
+
+                <ul><strong>כללי:</strong>
+                    <li>כולל פינוי פסולת.</li>
+                    <li>כולל ניקיון בסיסי לאחר השיפוץ.</li>
+                    <li>שימוש בפוגות (מרווחים) של 2 ס"מ בריצוף ובאריחים.</li>
+                    <li>אריחים וקרמיקות עד גודל של 60X120 ס"מ.</li>
+                </ul>
                 </p>
-                <h3>סיכום</h3>
+                <h3>סיכום:</h3>
                 <p>
-                    <ul>
-                        <li>משך העבודה בין 5 - 6 ימי עסקים (תיתכן זליגה של יום או יומיים למען ביצוע עבודה מוגמרת).</li>
-                        <li>העבודה תבוצע ברמה סטנדרטית ביחס לדירה שמיועדת להשכרה.</li>
-                        <li>"חומרי שחורים" כגון: צבע, שפכטל, חומרי איטום, דבק יסופקו ע"י הקבלן.</li>
-                        <li>פאנלים גופי תאורה לארון המטבח יספוקו ע"י הלקוח.</li>
-                        <li>ארון רחצה כולל (כיור, ברז, סיפון, מראה) יסופקו ע"י הקבלן.</li>
-                        <li>קרמיקות יסופקו ע"י הלקוח.</li>
-                        <li>גופי תאורה סטנדרטיים (פנדנטים) יסופקו ע"י הקבלן.</li>
-
-                    </ul>
+                <ol>
+                    <li>חומרים לבנים יספוקו ע"י <span class="client"></span>.</li>
+                    <li>חומרים שחורים יסופקו ע"י <span class="contractor"></span>.</li>
+                    <li>משך העבודה בין - 21 ל - 26 ימי עסקים עם אפשרות לחריגה מכל סיבה שהיא.</li>
+                    <li></li>
+                </ol>
                 </p>
                 <h3>תשלומים</h3>
                 <ul>
-                    <li>מקדמה ע"ס: 3,000₪ במזומן.</li>
-                    <li>בסיום העבודה תשלום נוסף אחרון ע"ס: 8,500₪ במזומן</li>
+                    <li>מקדמה ע"ס ₪<span id="firstPayment"></span></li>
+                    <li>תשלום שני - בסיום השלמת הפירוקים, אינסטלציה, ריצוף רצפה - ע"ס ₪<span id="secondPayment"></span>
+                    </li>
+                    <li>תשלום שלישי - בסיום השלמת הדבקת אריחים בקירות, מילוי רובה, צביעת תקרה - ע"ס ₪<span
+                            id="thirdPayment"></span></li>
+                    <li>תשלום רביעי - בסיום השלמת התקנת אביזרים סינטריים , פינוי פסולת, פינישים - ע"ס ₪<span
+                            id="lastPayment"></span></li>
+
                 </ul>
                 <hr>
-                <p><strong>מחיר העבודה הכללי: <u>11,500₪</u></strong>
+                <p><strong>מחיר העבודה הכללי: <u>₪<span id="totalPayment"></span></u></strong>
                 </p>
                 <hr>
                 <div id="buttons" class="container text-center mt-4">
 
-                    <button id="callMeBtn" class="btn btn-primary me-2" onclick="callMe()">Call Me</button>
+                    <img class="btn1" id="callMe" src="callme.png" />
+                    <img class="btn1" id="whatsApp" src="whatsapp.png" />
+                    <a href="mailto:senioretai@gmail.com">
+                        <img class="btn1" id="gmail" src="gmail.png" alt="Send Email" />
+                    </a>
 
-                    <button id="whatsAppBtn" class="btn btn-success" onclick="whatsAppMe()">WhatsApp Me</button>
-                    <p class="cRights">© 2024 Etai Hatuel. All rights reserved.</p>
                 </div>
+                <p class="cRights">© 2024 Etai Hatuel. All rights reserved.</p>
             </div>
         </div>
     </div>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
+
 </html>
