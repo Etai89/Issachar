@@ -7,8 +7,8 @@ $('.contractor').text(contractor)
 
 
 function zoomOut() {
-    document.body.style.transform = "scale(0.8)"; // Adjust scale as desired (0.8 = 80% zoom)
-    document.body.style.transformOrigin = "top left"; // Sets the origin of scaling
+    document.body.style.transform = "scale(0.95)"; // Adjust scale as desired (0.8 = 80% zoom)
+    document.body.style.transformOrigin = "top center"; // Sets the origin of scaling
 }
 zoomOut()
 const square = (x, y) => {
