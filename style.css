@@ -1,38 +1,37 @@
 
 .main {
-    /* display: flex; */
     height: 100px;
-    
 }
 
 #logo {
-    width: 150px;
-    height: 150px;
-    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    margin-top: -20px;
     margin-left: 10px;
-    margin-right: -50px;
 }
 
 .titleRow {
     margin-top: 50px;
     margin-right: 50px;
-    
 }
 
 .title {
     margin-top: 50px;
-    margin-right: 50px;
+    margin-left: 250px;
+    text-align: center;
     
+}
+.subTitle{
+    text-align: center;
+    margin-left: 250px;
 }
 
 table {
 background-color: rgb(224, 224, 224);
-
 }
 
 thead {
     text-align: center;
-
 }
 
 .type {
@@ -49,8 +48,8 @@ td {
 }
 
 .logo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 #details {
@@ -83,44 +82,37 @@ td {
 
 @media (max-width: 800px) {
     .logoMain{
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        justify-content: space-evenly;
     }
     #logo {
-
         display: flex;
         justify-content: center;
-        width: 500px;
-        height: 300px;
-        /* position: absolute; */
-        margin-right: 20px;
+        position: absolute;
+        margin-right: 10px;
     }
 
     .logo {
-
         width: 300px;
         height: 300px;
+        margin: 10px;
     }
 
     #title {
         padding: 10px;
-        margin-top: 180px;
+        margin-top: 220px;
         position: absolute;
         margin-right: -10px;
-        text-align: center;
-
     }
-
     .title {
-        text-align: center;
+        margin-left: 0px;
         margin-top: 10px;
-        display: flex;
-        justify-content: center;
+
     }
 
     .subTitle {
-        text-align: center;
 
+        margin-left: 0px;
     }
 
     #details {

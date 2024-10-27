@@ -6,12 +6,15 @@ const contractor = "איתי חתואל"
 $('.contractor').text(contractor)
 
 
-
+function zoomOut() {
+    document.body.style.transform = "scale(0.8)"; // Adjust scale as desired (0.8 = 80% zoom)
+    document.body.style.transformOrigin = "top left"; // Sets the origin of scaling
+}
+// zoomOut()
 const square = (x, y) => {
     return x * y
 }
 
-console.log(square(2, 4))
 
 const runningMeter = (length_A, length_B, width_A, width_B, height) => {
     const length = length_A + length_B
@@ -20,7 +23,5 @@ const runningMeter = (length_A, length_B, width_A, width_B, height) => {
 }
 
 const result = Math.round(runningMeter(220, 240, 360, 380, 260))
-console.log(result)
-
 
 })
