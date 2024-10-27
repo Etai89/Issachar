@@ -35,15 +35,28 @@ $(document).ready(() => {
         whatsAppMe()
     })
 
+    const pdf = () =>{
+        $('#print').hide()
+        $('#buttons').hide();
+        print();
+        $('#buttons').toggle();
+        $('#print').show()
+    }
+
     $('#print').click(() => {
         if ($('#optionAselect').is(':checked')) {
-            $('#optionAdiv').toggle();
+            if (!$('optionAselect').is(':visible')){
+                $('#optionAdiv').toggle();
+            }
             if ($('#optionBdiv').is(':visible')) {
                 $('#optionBdiv').toggle();
             }
         }
         if ($('#optionBselect').is(':checked')) {
-            $('#optionBdiv').toggle();
+            if (!$('optionBselect').is(':visible')){
+                $('#optionBdiv').toggle();
+            }
+
             if ($('#optionAdiv').is(':visible')) {
                 $('#optionAdiv').toggle();
             }
@@ -53,11 +66,7 @@ $(document).ready(() => {
             alert('אנא בחר אחת מהאפשרויות על מנת להדפיס את ההצעה!');
             return;
         }
-        $('#print').hide()
-        $('#buttons').hide();
-        print();
-        $('#buttons').toggle();
-        $('#print').show()
+        pdf()
     });
     
 })

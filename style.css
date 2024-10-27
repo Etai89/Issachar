@@ -58,6 +58,7 @@ td {
     margin-bottom: 20px;
     padding: 10px;
 }
+
 #buttons{
     display: flex;
     justify-content: center;
@@ -81,16 +82,22 @@ td {
 }
 
 @media (max-width: 800px) {
+    .logoMain{
+        display: flex;
+        justify-content: space-around;
+    }
     #logo {
+
         display: flex;
         justify-content: center;
         width: 500px;
-        height: 250px;
+        height: 300px;
         /* position: absolute; */
         margin-right: 20px;
     }
 
     .logo {
+
         width: 300px;
         height: 300px;
     }
@@ -100,11 +107,15 @@ td {
         margin-top: 180px;
         position: absolute;
         margin-right: -10px;
+        text-align: center;
+
     }
 
     .title {
         text-align: center;
         margin-top: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .subTitle {
