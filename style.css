@@ -85,6 +85,9 @@ td {
         display: grid;
         justify-content: space-evenly;
     }
+    .box{
+        margin-top: 50px;
+    }
     #logo {
         display: flex;
         justify-content: center;

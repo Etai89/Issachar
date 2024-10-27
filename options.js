@@ -18,8 +18,8 @@ $(document).ready(()=>{
         }
         console.log('clicked')
     })
-    const totalA = 45000
-    const totalB = 50000
+    const totalA = 55000
+    const totalB = 60000
 
     $('#optionAselect').change(()=>{
         console.log('changed')
